@@ -1,0 +1,19 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 70rem;
+  top: 0;
+  position: absolute;
+  margin: 0vh auto 0;
+}
+
+.menu-container {
+  color: #ff5d5d
+}
