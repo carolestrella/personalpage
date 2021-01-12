@@ -1,7 +1,6 @@
 #page-landing {
   width: 100vw;
   height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,5 +14,73 @@
 }
 
 .menu-container {
-  color: #ff5d5d
+  display: flex;
+  top: 0;
+  position: absolute;
+  right: 0;
+  margin: 3.2rem 0;
+  margin-right: 16rem;
+}
+
+.menu-container a {
+  color: var(--color-font);
+  width: 8rem;
+  font: 700 2.7rem Roboto
+}
+
+.switch {
+  top: 0;
+  position: absolute;
+  right: 0;
+  margin-right: 3rem;
+  margin-top: 1rem;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 100px;
+	height: 40px;
+	background: var(--color-font);
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: var(--color-switch);;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 130px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 }

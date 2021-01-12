@@ -12,8 +12,24 @@ function Landing() {
         </div>
 
         <div className="menu-container">
-          <h1>Code</h1>
+          <a href="" className="code">
+            CODE
+          </a>
+
+          <a href="" className="art">
+            ART
+          </a>
+
+          <a href="" className="about">
+            ABOUT
+          </a>
         </div>
+
+        <div className="switch">
+          <input type="checkbox" id="switch" />
+          <label htmlFor="switch">Toggle</label>
+        </div>
+
       </div>
     </div>
   )
